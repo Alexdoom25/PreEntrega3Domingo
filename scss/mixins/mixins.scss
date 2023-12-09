@@ -1,0 +1,99 @@
+$texto1: 2rem;
+$texto2: 1.5rem;
+$texto3: 1rem;
+$titulo1:2.5rem;
+$titulo2:2rem;
+$titulo3:1.5rem;
+@mixin h1{
+    text-align: center;
+    font-size: $titulo1;
+    font-family:$tipografia;
+    padding: 10px;
+}
+@mixin h2{
+    font-size: $titulo2;
+    font-family:$tipografia;
+    color:black;
+    padding: 10px;
+}
+@mixin h3{
+    font-size: $titulo3;
+    font-family:$tipografia;
+    color:black;
+    padding: 1rem ;
+}
+@mixin texto-principal{
+    font-family: $tipografia;
+    font-size:$texto1;
+    padding: 5rem;
+    text-align: justify;
+}
+@mixin texto-secundario{
+    font-family: $tipografia;
+    font-size:$texto2;
+    text-align: justify;
+    padding: 1rem;
+}
+@mixin texto-noticia{
+    font-family: $tipografia;
+    font-size:$texto3;
+    text-align: justify;
+    padding: 1rem;
+}
+@mixin videos{
+    width: 90%;
+    height: 460px;
+    padding: 1rem;
+}
+@mixin videos-mobil{
+    height: 350px;
+}
+@mixin texto-mobil{
+    font-family: $tipografia;
+    font-size:$texto3;
+    text-align: justify;
+    padding: 16px;
+}
+@mixin img-noticia{
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    border-radius: 50px;
+}
+@mixin enlace{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+@mixin centrado{
+    text-align: center;
+}
+@mixin tarjeta{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    border-bottom: 1px solid rgb(204, 198, 198);
+    padding: 5px;
+    &:last-of-type{
+        border: 0;
+    }
+}
+@mixin tarjeta-movil{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    border-bottom: 1px solid rgb(204, 198, 198);
+    padding: 5px;
+    &:last-of-type{
+        border: 0;
+    }
+}
+@mixin tarjetas-encabezado{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@mixin img-movil{
+    width: 100%;
+    height: 250px;
+}
+

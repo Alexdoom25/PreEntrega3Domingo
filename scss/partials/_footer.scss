@@ -1,0 +1,45 @@
+@import "../mixins/mixins.scss";
+
+footer{
+    nav{
+        background-color: $color-primario;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content:center;
+        a{
+            text-decoration: none;
+            font-family: $tipografia;
+            font-size: large;
+            color:white ;
+            padding: 10px;
+            &:hover{
+                color:$texto-enlace-sec ;
+                }
+        }
+    }
+
+}
+.copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:black;
+    color: aliceblue;
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}
+
+@media(max-width: 360px){
+    footer{
+        nav{
+            flex-direction: column;
+        }
+    }
+    .copy{
+        flex-direction: column;
+        align-items: center;
+    }
+}

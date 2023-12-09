@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+
+@import "./partials/header";
+@import "./partials/main";
+@import "./partials/footer";
+@import "./partials/noticias";
+@import "./partials/galeria";
+@import "./partials/tecnologia";
+@import "./partials/musica";
+@import "./partials/cine";
+@import "./mixins/mixins.scss";
+
+
+h1{
+    @include h1;
+}
+
+h2{
+    @include h2;
+}

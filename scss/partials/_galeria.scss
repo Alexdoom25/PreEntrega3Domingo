@@ -1,0 +1,45 @@
+@import "../mixins/mixins.scss";
+/* contenido de la galeria */
+main{
+    div{
+        .img-carrusel{
+            width: 100%;
+            height: 500px; 
+        }
+    }
+}
+section{
+    h2{
+        @include h2;
+        @include centrado;
+    }
+    .galeria{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .img-propia{
+        width: 100%;
+        height: 350px;
+        padding: 5px;
+    }
+
+}
+
+@media(max-width: 360px){
+    section{
+        h2{
+            @include h2;
+            @include centrado;
+        }
+        .galeria{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .img-propia{
+            width: 180px;
+            height: 250px;
+            padding: 10px;
+        }
+    
+    }
+}
